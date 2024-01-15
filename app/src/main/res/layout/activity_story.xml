@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Story Board"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:layout_margin="2pt"
+        android:textSize="12pt" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find"
+            android:textSize="10pt"
+            android:onClick="performQuery" />
+
+        <EditText
+            android:layout_width="105pt"
+            android:layout_height="wrap_content"
+            android:id="@+id/findText"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <CheckBox
+            android:buttonTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/drawingCheck"
+            android:checked="true"
+            android:onClick="performQuery" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Include drawings"
+            android:textSize="9pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <CheckBox
+                android:buttonTint="#0096ff"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/checkItem1"
+                android:onClick="updateSelectedText" />
+
+            <CheckBox
+                android:buttonTint="#0096ff"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/checkItem2"
+                android:onClick="updateSelectedText" />
+
+            <CheckBox
+                android:buttonTint="#0096ff"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:id="@+id/checkItem3"
+                android:onClick="updateSelectedText" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:id="@+id/listView" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="12pt"
+        android:text="You selected: "
+        android:textSize="8pt"
+        android:layout_gravity="center"
+        android:layout_margin="1pt"
+        android:id="@+id/selectedText"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="95pt"
+        android:text="Your story will appear here."
+        android:textSize="7pt"
+        android:layout_gravity="center"
+        android:textStyle="italic"
+        android:id="@+id/storyText"
+        android:textAlignment="center"
+        android:layout_margin="1pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Story"
+            android:textSize="10pt"
+            android:onClick="generateStory"
+            android:layout_margin="1pt"/>
+
+        <Button
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="10pt"
+            android:layout_margin="1pt"
+            android:onClick="onClickBack" />
+
+    </LinearLayout>
+
+</LinearLayout>

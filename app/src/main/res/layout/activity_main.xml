@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <Button
+        android:onClick="onClickPicture"
+        android:backgroundTint="#0096ff"
+        android:layout_width="130pt"
+        android:layout_height="30pt"
+        android:layout_margin="5pt"
+        android:text="Picture Tagger"
+        android:textSize="15pt" />
+
+    <Button
+        android:onClick="onClickDrawing"
+        android:backgroundTint="#0096ff"
+        android:layout_width="130pt"
+        android:layout_height="30pt"
+        android:layout_margin="5pt"
+        android:text="Drawing Tagger"
+        android:textSize="15pt" />
+
+    <Button
+        android:onClick="onClickStory"
+        android:backgroundTint="#0096ff"
+        android:layout_width="130pt"
+        android:layout_height="30pt"
+        android:layout_margin="5pt"
+        android:text="Story Teller"
+        android:textSize="15pt" />
+
+</LinearLayout>

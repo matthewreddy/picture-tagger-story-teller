@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".PictureActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/topImageView"
+        android:layout_margin="5pt"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tags"
+            android:textSize="13pt"
+            android:onClick="onClickTags" />
+
+        <EditText
+            android:layout_width="100pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="1pt"
+            android:inputType="text"
+            android:id="@+id/tagsText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:text="Camera"
+            android:textSize="13pt"
+            android:onClick="startCamera" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:text="Save"
+            android:textSize="13pt"
+            android:onClick="onClickSave" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/findButton"
+            android:backgroundTint="#0096ff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt"
+            android:text="Find"
+            android:textSize="13pt"
+            android:onClick="onClickFind" />
+
+        <EditText
+            android:id="@+id/findText"
+            android:layout_width="75pt"
+            android:layout_height="wrap_content"
+            android:layout_margin="2pt" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="310dp" />
+
+    <Button
+        android:backgroundTint="#0096ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Back"
+        android:textSize="12pt"
+        android:layout_margin="3pt"
+        android:onClick="onClickBack" />
+
+</LinearLayout>
